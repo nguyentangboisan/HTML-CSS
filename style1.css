@@ -1,0 +1,52 @@
+.table td{
+	padding: 5px 10px;
+}
+.input, textarea, select{
+	border: solid 1px purple;
+	padding: 5px 10px;
+	width: 200px;
+}
+.select{
+	width: 180px;
+}
+input[type="Submit"]{
+	width: auto;
+	background: cyan;
+	color: black;
+
+
+}
+#header{
+	border: solid 2px purple;
+	height: 200px;
+	
+}
+#menu{
+	height: 50px;
+	background: cyan;
+
+}
+.main-wrapper{
+	height: 500px;
+	background: white;
+}
+.content{
+	float: left;
+	height: 500px;
+	width: 73%;
+	border: solid 1px purple;
+}
+.slidebar{
+	float: right;
+	height: 500px;
+	width: 400px;
+	border: solid 1px purple;
+}
+footer{
+	border: solid 1px purple;
+	height: 200px;
+	background: cyan;
+}
+header{
+	background: red;
+}
