@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Montagu+Slab:wght@300&display=swap');
 :root{
-	--main-color: #043B6B;
+	--main-color: #053c6b;
 	--text-color: #FFFFFF;
 	--sub-color: #EAA023;
-	--hover-color: #FFFFFF;
-	--body-color: #F5F1BA;
+	--hover-color: #fd7607;
+	--body-color: #FFFFFF;
 	--tbody--color: #000;
 	--gia--color: #F70A1A;
 }
@@ -121,20 +123,23 @@ a{
 	transform: translateX(100%);
 	transition: all 0.3s ease;
 	background-size: cover;
-	background-color: #E4EDED;
-	opacity: 0.6;
-
+	background-color: var(--main-color);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position:  center;
+	background-attachment: scroll;
+	background-image: url("https://thaimarket.vn/images/logo1.svg");
 }
 .menu-items.active{
 	transform: translateX(0);
 }
 .menu-items li a{
-	color: black;
+	color: var(--text-color);
 	line-height: 40px;
-	font-size: 25px;
-	font-family: 'Pacifico', cursive;
+	font-size: 26px;
+	font-family: 'Lobster', cursive;
 	text-align: center;
-	text-shadow: 10px 20px 10px blue;
+	text-shadow: 5px 5px 10px blue;
 	margin-top: 100px;
 	font-weight: bold;
 }
@@ -210,6 +215,7 @@ a{
 }
 .btn:hover{
 	background-color: var(--hover-color);
+	color: white
 }
 .id {
 	display: inline-block;	
@@ -326,9 +332,9 @@ font-size: 25px;
 .section-title h2{
 	font-size: 35px;
 	color: var(--tbody--color);
-	text-shadow: 5px 5px 5px white;
+	text-shadow: 5px 5px 10px blue;
 	text-transform: uppercase;
-	font-family: 'Pacifico', cursive;
+	font-family: 'Lobster', cursive;
 }
 .section-title h2::before{
 	content: "";
@@ -370,14 +376,8 @@ font-size: 25px;
 	position: absolute;
 	left: 15px;
 	bottom: 0px;
-	border: 1px dashed #043B6B;
+	border: 1px dotted #85bdee;
 	width: 100%;
-}
-.food-items:hover .food-item p {  
-	color: var(--main--color);
-}
-.food-items:hover .food-price p { 
-	color: var(--main--color);
 }
 .food-item {
 	display: flex;
@@ -389,14 +389,63 @@ font-size: 25px;
 	margin-right: 30px;
 }
 .food-item p {
-	color: var(--tbody--color);
-	font-family: 'Lobster', cursive;
+	color: black;
+	font-family: 'Dancing Script', cursive;
 	transform: all 0.3s ease-in;
-	font-size: 20px
+	font-size: 25px;
+	text-shadow: 5px 5px 10px blue;
 }
 .food-price p {
-	color: var(--gia--color);
+	color: black;
+	font-family: 'Dancing Script', cursive;
+	font-size: 25px;
+	transform: all 0..3s ease-in;
+	text-shadow: 5px 5px 10px blue;
+}
+.food-item p:hover {
+	color: #F70A1A;
+	text-shadow: 3px 3px 3px #dffafa;
+}
+.food-price p:hover {
+	color: #F70A1A;
+	text-shadow: 3px 3px 3px #d9f0f0;
+}
+.menu-item-content{
+	display: none;
+}
+.menu-item-content.active{
+	display: flex;
+	flex-wrap: wrap;
+}
+.phan-hoi{
+	background-color: var(--body-color);
+}
+.phan-hoi-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.phan-hoi-item{
+	width: calc(100%/3 - 30px);
+	background-color: var(--main-color);
+	margin: 0px 15px;
+}
+.phan-hoi-item p{
+	color: var(--text-color);
 	font-family: 'Lobster', cursive;
 	font-size: 20px;
-	transform: all 0..3s ease-in;
+	text-shadow: 5px 5px 10px blue;
+}
+.phan-hoi-item img{
+	width: 150px;
+	border-radius: 50%;
+}
+.phan-hoi-item-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.phan-hoi-item h2{
+	color: var(--text-color);
+	text-shadow: 5px 5px 10px blue;
 }

@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, intial-scale=1.0">
 	<script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossigin="anonymous"></script>
+	<script src="https://fontawesome.com/v4.7/"></script>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<title>Restaurant</title>
 	<link rel="stylesheet" href="./style1.css">
 </head>
@@ -73,7 +75,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="menu">
+	<section class="menu selection-padding">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -83,83 +85,378 @@
 			</div>
 			<div class="row">
 				<div class="menu-title">
-					<button class="menu-button">Món Trưa</button>
-					<button class="menu-button">Chiều Tối</button>
-					<button class="menu-button">Đồ Uống</button>
-					<button class="menu-button">Điểm Tâm</button>
+					<button class="menu-button active" data-title="#trua" >Món Trưa</button>
+					<button class="menu-button" data-title="#chieu" >Chiều Tối</button>
+					<button class="menu-button" data-title="#do-uong" >Đồ Uống</button>
+					<button class="menu-button" data-title="#diem-tam" >Điểm Tâm</button>
 				</div>
 			</div>
 			<div class="row justify-content">
-				<div class="food-items">
-					<div class="food-item">
-						<img src="images/montrua.jpg" alt="">
-						<p>Món A</p>
+				<div class="menu-item-content active" id="trua">
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/montrua.jpg" alt=""></a>
+							<p>Món Trưa</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
 					</div>
-					<div class="food-price">
-						<p>150.000 VNĐ</p>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/chieutoi.jpg" alt=""></a>
+							<p>Món Trưa</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/diemtam.jpg" alt=""></a>
+							<p>Món Trưa</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/j.jpg" alt=""></a>
+							<p>Món Trưa</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/4.jpg" alt=""></a>
+							<p>Món Trưa</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/4.png" alt=""></a>
+							<p>Món Trưa</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/k.jpg" alt=""></a>
+							<p>Món Trưa</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/b.jpg" alt=""></a>
+							<p>Món Trưa</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
 					</div>
 				</div>
-				<div class="food-items">
-					<div class="food-item">
-						<img src="images/chieutoi.jpg" alt="">
-						<p>Món A</p>
+				<div class="menu-item-content" id="chieu">
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/montrua.jpg" alt=""></a>
+							<p>Món Chiều</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
 					</div>
-					<div class="food-price">
-						<p>150.000 VNĐ</p>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/chieutoi.jpg" alt=""></a>
+							<p>Món Chiều</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/diemtam.jpg" alt=""></a>
+							<p>Món Chiều</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/j.jpg" alt=""></a>
+							<p>Món Chiều</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/4.jpg" alt=""></a>
+							<p>Món Chiều</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/4.png" alt=""></a>
+							<p>Món Chiều</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/k.jpg" alt=""></a>
+							<p>Món Chiều</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/b.jpg" alt=""></a>
+							<p>Món Chiều</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
 					</div>
 				</div>
-				<div class="food-items">
-					<div class="food-item">
-						<img src="images/diemtam.jpg" alt="">
-						<p>Món A</p>
+				<div class="menu-item-content" id="do-uong">
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/montrua.jpg" alt=""></a>
+							<p>Thức Uống</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
 					</div>
-					<div class="food-price">
-						<p>150.000 VNĐ</p>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/chieutoi.jpg" alt=""></a>
+							<p>Thức Uống</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/diemtam.jpg" alt=""></a>
+							<p>Thức Uống</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/j.jpg" alt=""></a>
+							<p>Thức Uống</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/4.jpg" alt=""></a>
+							<p>Thức Uống</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/4.png" alt=""></a>
+							<p>Thức Uống</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/k.jpg" alt=""></a>
+							<p>Thức Uống</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/b.jpg" alt=""></a>
+							<p>Thức Uống</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
 					</div>
 				</div>
-				<div class="food-items">
-					<div class="food-item">
-						<img src="images/j.jpg" alt="">
-						<p>Món A</p>
+				<div class="menu-item-content" id="diem-tam">
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/montrua.jpg" alt=""></a>
+							<p>Điểm Tâm</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
 					</div>
-					<div class="food-price">
-						<p>150.000 VNĐ</p>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/chieutoi.jpg" alt=""></a>
+							<p>Điểm Tâm</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/diemtam.jpg" alt=""></a>
+							<p>Điểm Tâm</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/j.jpg" alt=""></a>
+							<p>Điểm Tâm</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/4.jpg" alt=""></a>
+							<p>Điểm Tâm</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/4.png" alt=""></a>
+							<p>Điểm Tâm</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/k.jpg" alt=""></a>
+							<p>Điểm Tâm</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
+					</div>
+					<div class="food-items">
+						<div class="food-item">
+							<a href="#"><img src="images/b.jpg" alt=""></a>
+							<p>Điểm Tâm</p>
+						</div>
+						<div class="food-price">
+							<p>150.000 VNĐ</p>
+						</div>
 					</div>
 				</div>
-				<div class="food-items">
-					<div class="food-item">
-						<img src="images/4.jpg" alt="">
-						<p>Món A</p>
+			</div>
+		</div>
+	</section>
+	<section class="phan-hoi section-pading">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<p class="tiletoi">Ý Kiến</p>
+					<h2>Phản Hồi</h2>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="phan-hoi-items">
+					<div class="phan-hoi-item">
+						<div class="phan-hoi-item-content">
+							<div class="phan-hoi-item-img-content-text">
+								<h2>John Raise</h2>
+								<p>Food Specifically</p>
+							</div>
+							<div class="phan-hoi-item-img-content-img">
+								<img src="images/avt.png">
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						<div class="phan-hoi-item-star">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</div>
 					</div>
-					<div class="food-price">
-						<p>150.000 VNĐ</p>
+					<div class="phan-hoi-item">
+						<div class="phan-hoi-item-content">
+							<div class="phan-hoi-item-img-content-text">
+								<h2>John Raise</h2>
+								<p>Food Specifically</p>
+							</div>
+							<div class="phan-hoi-item-img-content-img">
+								<img src="images/avt.jpg">
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						<div class="phan-hoi-item-star">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</div>
 					</div>
-				</div>
-				<div class="food-items">
-					<div class="food-item">
-						<img src="images/4.png" alt="">
-						<p>Món A</p>
-					</div>
-					<div class="food-price">
-						<p>150.000 VNĐ</p>
-					</div>
-				</div>
-				<div class="food-items">
-					<div class="food-item">
-						<img src="images/k.jpg" alt="">
-						<p>Món A</p>
-					</div>
-					<div class="food-price">
-						<p>150.000 VNĐ</p>
-					</div>
-				</div>
-				<div class="food-items">
-					<div class="food-item">
-						<img src="images/b.jpg" alt="">
-						<p>Món A</p>
-					</div>
-					<div class="food-price">
-						<p>150.000 VNĐ</p>
+					<div class="phan-hoi-item">
+						<div class="phan-hoi-item-content">
+							<div class="phan-hoi-item-img-content-text">
+								<h2>John Raise</h2>
+								<p>Food Specifically</p>
+							</div>
+							<div class="phan-hoi-item-img-content-img">
+								<img src="images/avt1.png">
+							</div>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+						<div class="phan-hoi-item-star">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</div>
 					</div>
 				</div>
 			</div>
