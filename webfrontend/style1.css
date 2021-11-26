@@ -51,7 +51,7 @@ a{
 	background-color: var(--main-color);
 	z-index: -1;
 	transform: translateY(-100%);
-	transition: all 0.3s ease;
+	transition: all 0.3s ease-out;
 }
 .top.active::before{
 	transform: translateY(0);
@@ -80,7 +80,7 @@ a{
 	width: 40px;
 	background-color: var(--sub-color);
 	position: relative;
-	transition: all 0.3s ease;
+	transition: all 0.3s ease-out;
 }
 
 .top .menu-bar.active span{
@@ -129,6 +129,7 @@ a{
 	background-position:  center;
 	background-attachment: scroll;
 	background-image: url("https://thaimarket.vn/images/logo1.svg");
+	opacity: 0.8;
 }
 .menu-items.active{
 	transform: translateX(0);
@@ -322,7 +323,7 @@ font-size: 25px;
 	100%{transform: rotate(360deg);}
 }
 .section-pading{
-	padding: 80px 0px;
+	padding: 50px 0px;
 }
 .section-title{
 	width: 100%;
@@ -417,9 +418,6 @@ font-size: 25px;
 	display: flex;
 	flex-wrap: wrap;
 }
-.phan-hoi{
-	background-color: var(--body-color);
-}
 .phan-hoi-items{
 	display: flex;
 	flex-wrap: wrap;
@@ -428,17 +426,26 @@ font-size: 25px;
 .phan-hoi-item{
 	width: calc(100%/3 - 30px);
 	background-color: var(--main-color);
-	margin: 0px 15px;
+	margin: 0 15px;
+	padding: 15px;
+	border: 1px solid var(--tbody--color);
+	border-radius: 10%;
+	box-shadow: 10px 0 10px 5px #1583e4;
+}
+.phan-hoi-item:hover img{
+	border-color: var(--sub-color);
 }
 .phan-hoi-item p{
 	color: var(--text-color);
-	font-family: 'Lobster', cursive;
-	font-size: 20px;
+	margin: 20px 0;
+	font-size: 18px;
 	text-shadow: 5px 5px 10px blue;
 }
 .phan-hoi-item img{
-	width: 150px;
-	border-radius: 50%;
+	width: 100px;
+	border-radius: 50px;
+	border: solid 4px var(--text-color);
+	transition: all 0.3s ease-in-out;
 }
 .phan-hoi-item-content{
 	display: flex;
@@ -448,4 +455,117 @@ font-size: 25px;
 .phan-hoi-item h2{
 	color: var(--text-color);
 	text-shadow: 5px 5px 10px blue;
+	font-size: 20px;
 }
+.phan-hoi-item-star{
+	color: var(--sub-color);
+}
+.team-items{
+	width: calc(100%/3);
+	padding: 15px;
+	position: relative;
+}
+.team-items img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	transition: all 0.5s ease;
+}
+.team-items:hover .team-items-text{
+	background-color: var(--sub-color);
+	transform: translateY(-50px);
+}
+.team-items:hover img{
+	transform: skewX(2deg);
+}
+.team-items-text{
+	position: absolute;
+	padding: 15px 0;
+	right: 30px;
+	left: 30px;
+	bottom: 0;
+	background-color: var(--main-color);
+	text-align: center;
+	border-radius: 10px;
+	transform: translateY(50%);
+	transition: all 0.5s ease;
+}
+.team-items-text h2, p{
+	color: var(--text-color);
+}
+.footer {
+	padding-top: 80px;
+	position: relative;
+}
+.footer-bg{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	position: absolute;
+	background-image: url(images/footer.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -2;
+}
+.footer::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	top: 0;
+	opacity: 0.4;
+	z-index: -1;
+}
+.footer-item i{
+	color: #FFFFFF;
+	font-size: 23px;
+	margin-right: 12px;
+	cursor: pointer;
+	justify-content: space-between;
+	text-shadow: 5px 5px 5px blue;
+}
+.footer-item i:hover{
+	color: #EAA023;
+	
+}
+.footer-item{
+	text-align: center;
+	width: calc(100%/3);
+}
+.footer h2{
+	color: var(--text-color);
+	font-size: 25px;
+	text-shadow: 5px 5px 10px blue;
+	font-family: 'Lobster', cursive;
+}
+.footer p{
+	color: var(--text-color);
+	margin: 12px 0;
+	text-shadow: 5px 5px 10px blue;
+	font-size: 20px;
+	font-family: 'Lobster', cursive;
+}
+.footer-item a{
+	color: var(--text-color);
+	font-size: 20px;
+	text-shadow: 5px 5px 10px blue;
+	font-family: 'Lobster', cursive;
+}
+.footer-social i{
+	font-size: 20px;
+	text-shadow: 5px 5px 10px blue;
+	font-family: 'Lobster', cursive;
+}
+.footer-copyright{
+	color: var(--text-color);
+	text-shadow: 5px 5px 10px blue;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+	border-top: dashed 3px white;
+	padding: 50px 0 12px;
+
+}
+
